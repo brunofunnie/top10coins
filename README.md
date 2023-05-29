@@ -7,7 +7,7 @@ This is a TOP 10 of the trending coins at the moment, it was implemented using L
 ![Screenshot Search](https://github.com/brunofunnie/top10coins/blob/main/docs/img-004.png "Search")
 ![Screenshot Coin Details](https://github.com/brunofunnie/top10coins/blob/main/docs/img-005.png "Coin Details")
 
-## REQUIREMENTS
+## ➡ REQUIREMENTS
 
 This project during the dev environment doesn't need the SSL protocol to be enabled. Also this project was tested on Unix environments (Linux and Mac) some commands on Windows may vary.
 
@@ -19,32 +19,32 @@ This project during the dev environment doesn't need the SSL protocol to be enab
 
 ℹ: The versions informed above are the ones used during the dev environment on my machine. It may and may not work on previous versions of the above applications.
 
-## INSTALLATION
+## ➡ INSTALLATION ⚙
 
 Below you will have two installation methods, with PHP and Node.js and using Docker although the Docker setup is just for the Backend (for now). Also be aware that the setup is just for development environment, it is in no way intended for production.
 
-### METHOD: PHP & NODE.JS
+### METHOD: PHP & NUXT.JS
 
 Clone this repository, open the terminal and navigate to the cloned directory. Then execute the following commands:
 
-#### INSTALL BACKEND PHP
+#### INSTALL BACKEND PHP 🐘
 
 ```bash
 cd fw-backend && composer install && cp .env.example .env && php artisan key:generate && php artisan serve
 ```
 
 Open another terminal in the same cloned directory and execute the following commands:
-#### INSTALL FRONTEND NUXT.JS 3
+#### INSTALL FRONTEND NUXT.JS 3 📐
 
 ```bash
 cd fw-frontend && yarn && yarn dev -o
 ```
 
-### METHOD: DOCKER
+### METHOD: DOCKER 🐋
 
 Clone this repository, open the terminal and navigate to the cloned directory. Then execute the following commands:
 
-#### INSTALL BACKEND PHP
+#### INSTALL BACKEND PHP 🐘
 
 ```bash
 docker-compose build && docker-compose up -d
@@ -67,13 +67,13 @@ docker exec -it top10coins-web bash -c 'composer install && cp .env.example .env
 ```
 
 Open another terminal in the same cloned directory and execute the following commands:
-#### INSTALL FRONTEND NUXT.JS 3
+#### INSTALL FRONTEND NUXT.JS 3 📐
 
 ```bash
 cd fw-frontend && yarn && yarn dev -o
 ```
 
-### OPEN APPLICATION
+## ➡ OPEN APPLICATION
 
 If everything went fine you should probably already have the application opened in your browser. But just in case you don't, click the link below:
 
