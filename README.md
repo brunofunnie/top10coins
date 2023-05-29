@@ -2,7 +2,10 @@
 
 This is a TOP 10 of the trending coins at the moment, it was implemented using Laravel 10 and Nuxt.js 3
 
-
+![Screenshot Main](https://github.com/brunofunnie/top10coins/blob/main/docs/img-002.png "Main")
+![Screenshot Search](https://github.com/brunofunnie/top10coins/blob/main/docs/img-003.png "Search")
+![Screenshot Search](https://github.com/brunofunnie/top10coins/blob/main/docs/img-004.png "Search")
+![Screenshot Coin Details](https://github.com/brunofunnie/top10coins/blob/main/docs/img-005.png "Coin Details")
 
 ## REQUIREMENTS
 
@@ -55,7 +58,7 @@ docker-ps
 
 And if everything is ok, you'll see something like this:
 
-![Docker PS output](/assets/img/test.png "Docker PS output")
+![Docker PS output](https://github.com/brunofunnie/top10coins/blob/main/docs/img-001.png "Docker PS output")
 
 And for the last run the following:
 
