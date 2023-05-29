@@ -73,3 +73,10 @@ Open another terminal in the same cloned directory and execute the following com
 cd fw-frontend && yarn && yarn dev -o
 ```
 
+### OPEN APPLICATION
+
+If everything went fine you should probably already have the application opened in your browser. But just in case you don't, click the link below:
+
+TOP 15 COINS
+[http://127.0.0.1:3000](http://127.0.0.1:3000)
+
