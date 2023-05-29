@@ -1,0 +1,11 @@
+version: "3.9"
+services:
+  httpd:
+    container_name: "top10coins-web"
+    build:
+      context: ./docker
+      dockerfile: web.dockerfile
+    ports:
+      - "8000:80"
+    volumes:
+      - ./fw-backend/:/app
