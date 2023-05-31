@@ -5,9 +5,8 @@ namespace App\Http\Controllers\API;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\CoinGecko\CoinGeckoMarketRequest;
 use App\Http\Resources\CoinGecko\CoinGeckoCoinResource;
-use App\Http\Resources\CoinGecko\CoinGeckoMarketResource;
+use App\Http\Resources\CoinGecko\CoinGeckoMarketCollectionResource;
 use App\Services\CoinGeckoService;
-use Illuminate\Http\Request;
 
 class CoinGeckoController extends Controller
 {
@@ -18,20 +17,20 @@ class CoinGeckoController extends Controller
         $this->coinGeckoService = $coinGeckoService;
     }
 
-    public function getCoinData(Request $request, $coinId)
+    public function getCoinData($coinId)
     {
         $data = $this->coinGeckoService->getCoinData($coinId);
 
-        return response()->json(new CoinGeckoCoinResource($data));
+        return new CoinGeckoCoinResource($data);
     }
 
     public function getMarketData(CoinGeckoMarketRequest $request)
     {
         $data = $this->coinGeckoService->getMarketData(
-            $request->input('vs_currency', 'usd'),
+            $request->input('vs_currency'),
             $request->input('ids', '')
         );
 
-        return response()->json(CoinGeckoMarketResource::collection($data));
+        return CoinGeckoMarketCollectionResource::collection($data);
     }
 }

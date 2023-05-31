@@ -5,7 +5,7 @@ namespace App\Http\Resources\CoinGecko;
 use Illuminate\Http\Request;
 use Illuminate\Http\Resources\Json\JsonResource;
 
-class CoinGeckoMarketResource extends JsonResource
+class CoinGeckoMarketCollectionResource extends JsonResource
 {
     /**
      * Transform the resource into an array.
