@@ -26,6 +26,5 @@
 <script setup>
 import { useCoinStore } from '~/store/coinStore.ts'
 
-const route = useRoute()
 const coinStore = useCoinStore()
 </script>

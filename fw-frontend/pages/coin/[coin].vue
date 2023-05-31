@@ -22,8 +22,8 @@ const { coin } = useRoute().params
 
 const getCoin = async () => {
 	const { data } = await useCustomFetch(`http://127.0.0.1:8000/api/coins/${coin}`)
-	console.log(data.value)
-	return data.value
+	const rawData = toRaw(data.value)
+	return rawData.data
 }
 
 const coinDetail = await getCoin()

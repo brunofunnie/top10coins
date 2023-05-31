@@ -14,10 +14,6 @@ export const useCoinStore = defineStore({
     },
     updateCoinList(value: any) {
       this.coinList = value
-    },
-    async fetchCoins() {
-      const { data } = await useCustomFetch('http://127.0.0.1:8000/api/coins/markets?vs_currency=usd')
-	    this.coinList = data.value
     }
   },
   getters: {

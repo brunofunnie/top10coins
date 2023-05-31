@@ -1,4 +1,4 @@
-export const useCustomFetch = async (url: any, options: any) => {
+export const useCustomFetch = (url: any, options: any) => {
 	// Set your custom headers here
 	const headers = {
 		'Accept': 'application/json',
@@ -14,5 +14,5 @@ export const useCustomFetch = async (url: any, options: any) => {
 	}
 
 	// Use the useFetch function with the modified options
-	return await useFetch(url, mergedOptions)
+	return useFetch(url, mergedOptions)
 }
